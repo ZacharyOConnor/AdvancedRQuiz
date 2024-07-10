@@ -15,6 +15,11 @@ editor: visual
 #| #Taking the cars dataset available in r, a dataframe with 50 observations on 2 variables: speed measured in miles per hour, and stopping distance required in feet
 #| #dataset shown:
 datasets::cars
+#| #Showing mean speed and stopping distance:
+#| #Mean speed:
+mean(datasets::cars$speed)
+#| #Mean stopping distance:
+mean(datasets::cars$dist)
 #| #Below is a simple scatter plot showing stopping distance required on the x axis vs speed of car on y axis
 plot(datasets::cars$dist, datasets::cars$speed, type = "p", xlab = "Distance required to stop car", ylab = "Speed of Car")
 ```
