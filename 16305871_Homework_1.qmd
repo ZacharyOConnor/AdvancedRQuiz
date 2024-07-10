@@ -1,0 +1,23 @@
+---
+title: "Homework 1"
+author: "Zachary O'Connor"
+date: today
+date-format: long
+format: pdf
+editor: visual
+---
+
+# Looking at distances required for cars to stop
+
+```{r}
+#| echo: false
+#| #rendering file so no R code is shown
+#| #Taking the cars dataset available in r, a dataframe with 50 observations on 2 variables: speed measured in miles per hour, and stopping distance required in feet
+#| #Below is a simple scatter plot showing stopping distance required on the x axis vs speed of car on y axis
+plot(datasets::cars$dist, datasets::cars$speed, type = "p", xlab = "Distance required to stop car", ylab = "Speed of Car")
+```
+
+## Noteworthy point: [The distance required by a car to stop goes up quickly as the speed of the car increases.]{style="color: green;"}
+
+### This means if you are driving faster, <span style="color: red;">you ___MUST___ allow for more space to stop</span>
+
